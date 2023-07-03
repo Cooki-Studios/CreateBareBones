@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "c:brass_blocks"
+    },
+    "P": {
+      "tag": "c:brass_plates"
+    }
+  },
+  "pattern": [
+    "I",
+    "P"
+  ],
+  "result": {
+    "item": "create:peculiar_bell"
+  }
+}

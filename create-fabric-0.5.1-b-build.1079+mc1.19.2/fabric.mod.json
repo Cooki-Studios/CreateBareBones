@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "create",
+  "version": "0.5.1-b-build.1079+mc1.19.2",
+  "name": "Create",
+  "description": "Technology that empowers the player.",
+  "authors": [
+    "Fabricators of Create",
+    "Creators of Create"
+  ],
+  "contact": {
+    "issues": "https://github.com/Fabricators-of-Create/Create/issues",
+    "sources": "https://github.com/Fabricators-of-Create/Create"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.simibubi.create.Create"
+    ],
+    "client": [
+      "com.simibubi.create.CreateClient"
+    ],
+    "fabric-datagen": [
+      "com.simibubi.create.CreateData"
+    ],
+    "fabric-gametest": [
+      "com.simibubi.create.infrastructure.gametest.CreateGameTests"
+    ],
+    "emi": [
+      "com.simibubi.create.compat.emi.CreateEmiPlugin"
+    ],
+    "rei_client": [
+      "com.simibubi.create.compat.rei.CreateREI"
+    ],
+    "jei_mod_plugin": [
+      "com.simibubi.create.compat.jei.CreateJEI"
+    ],
+    "modmenu": [
+      "com.simibubi.create.compat.modmenu.CreateModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "create.mixins.json"
+  ],
+  "accessWidener": "create.accesswidener",
+  "depends": {
+    "fabricloader": "\u003e\u003d0.14.19",
+    "fabric-api": "\u003e\u003d0.73.2+1.19.2",
+    "minecraft": "1.19.2"
+  },
+  "breaks": {
+    "optifabric": "*",
+    "colormatic": "\u003c\u003d3.1.1",
+    "iris": "\u003c\u003d1.2.5"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_1688": [
+        "com/simibubi/create/foundation/utility/fabric/AbstractMinecartExtensions"
+      ]
+    }
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/Porting-Lib-2.1.1032+1.19.2.jar"
+    },
+    {
+      "file": "META-INF/jars/Registrate-1.1.58-MC1.19.2.jar"
+    },
+    {
+      "file": "META-INF/jars/core-3.6.3.jar"
+    },
+    {
+      "file": "META-INF/jars/toml-3.6.3.jar"
+    },
+    {
+      "file": "META-INF/jars/forge-config-api-port-fabric-547434-4143545.jar"
+    },
+    {
+      "file": "META-INF/jars/flywheel-fabric-1.19.2-0.6.8.a-5.jar"
+    },
+    {
+      "file": "META-INF/jars/reach-entity-attributes-2.3.0.jar"
+    },
+    {
+      "file": "META-INF/jars/milk-lib-1.0.51.jar"
+    },
+    {
+      "file": "META-INF/jars/jsr305-3.0.2.jar"
+    }
+  ]
+}
